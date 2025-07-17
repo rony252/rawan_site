@@ -9,6 +9,7 @@ body {
   line-height: 1.6;
   background-color: #f0f4ff;
   color: #1e293b;
+  text-align: center;
 }
 
 .container {
@@ -28,6 +29,7 @@ h2 {
   background-color: #ffffff;
   padding: 15px 0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  text-align: left;
 }
 
 .navbar .container {
@@ -61,6 +63,11 @@ h2 {
 .hero {
   background-color: #dbeafe;
   padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .hero .container {
@@ -116,26 +123,38 @@ h2 {
 
 .features {
   background-color: white;
-  text-align: center;
   display: flex;
   justify-content: center;
-  gap: 20px;
-  padding: 50px 20px;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 20px;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .feature-box {
-  width: 150px;
-  padding: 30px;
-  background: white;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  border-radius: 8px;
+  width: 180px;
+  padding: 35px 25px;
+  background: #ffffff;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.07);
+  border-radius: 12px;
   font-weight: bold;
-  transition: 0.3s;
+  transition: transform 0.3s ease;
+  font-size: 1.2rem;
+  color: #1d4ed8;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature-box:hover {
+  transform: translateY(-8px);
+  background-color: #fef9c3;
 }
 
 .feature-box.active {
   background-color: #facc15;
+  color: #1e293b;
 }
 
 .about .container {
@@ -201,6 +220,7 @@ h2 {
   gap: 15px;
   max-width: 500px;
   margin: auto;
+  align-items: center;
 }
 
 .contact input,
@@ -209,6 +229,7 @@ h2 {
   border: 1px solid #cbd5e1;
   border-radius: 4px;
   font-size: 1rem;
+  width: 100%;
 }
 
 .map iframe {
@@ -239,6 +260,7 @@ footer {
   .banner-text,
   .about-text {
     flex: 1;
+    text-align: left;
   }
 
   .hero-img,
@@ -257,4 +279,9 @@ footer {
   .about-img img {
     width: 100%;
   }
+
+  .features {
+    justify-content: center;
+  }
 }
+
